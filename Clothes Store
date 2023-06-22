@@ -1,0 +1,28 @@
+create table clothes(id integer primary key, season text, quantity integer, price integer, quality text);
+insert into clothes values(1, "summer", 5, 25, "normal");
+
+insert into clothes values(2, "fall", 45, 80, "good");
+
+insert into clothes values(4, "spring", 55, 80, "good");
+
+insert into clothes values(5, "winter", 75, 125, "new");
+
+insert into clothes values(6, "fall", 45, 75, "normal");
+
+insert into clothes values(7, "summer", 35, 65, "normal");
+
+insert into clothes values(9, "summer", 130, 200, "great");
+
+insert into clothes values(10, "winter", 45, 50, "good");
+
+create table season(season text primary key,price integer);
+insert into season values( "fall.collection" , 750 );
+insert into season values( "winter.collection" , 125 );
+insert into season values( "summer.collection" , 80 );
+insert into season values( "spring.collection" , 90 );
+
+select * from clothes
+order by quantity desc;
+
+select * from season
+order by price desc;
